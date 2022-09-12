@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+@font-face {
+    font-family: roboto;
+    src:  url(roboto/Roboto-Regular.ttf);
+
+}
+@font-face {
+    font-family: roboto;
+    src:  url(roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(roboto/Roboto-Light.ttf);
+    font-weight: lighter;
+  }
+
+
+body{
+  font-family: roboto;
+  font-weight: bold;
+  margin: 0;
+  height: 100vh;
+  
+}
+
+a{
+    text-decoration: none;
+}
+.zin1{
+    z-index: -4;
+    position: absolute;
+}
+p{
+    margin-top: 0em; 
+}
+
+.container-all,.container{
+   height: 100vh; 
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.container-all{
+    
+    overflow: auto;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y mandatory;
+}
+.container{
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+
+}
+.container-inside{
+    flex-direction: column;
+    text-align: center;
+}
+.container-text{
+    margin: 0.5em auto;
+}
+
+.img-md{
+    /* width: 26.2em; */
+    width: 50%;
+}
+@media only screen and (max-width: 1280px) {
+    .img-md{
+        width: 42%;
+    }
+  }
+
+.pink{
+    color: rgb(227, 113, 166) ;
+}
+.white{
+    color: white;
+}
+
+
+
+.black-dash{
+    color: black;
+    text-decoration: underline;
+}
+
+.issue{
+    color: black;
+    font-weight: lighter;
+   
+}
+.issue:hover{
+    text-decoration: underline;
+}
+.space1{
+    margin-bottom: 0.8em;
+}
+
